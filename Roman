@@ -1,0 +1,14 @@
+def romanToInt(n):
+    lis = []
+    add = 0
+    rom = {'I':1,'IV':4,'V':5,'IX':9,'X':10,'L':50,'C':100,'D':500,'CM':900,'M':1000}
+    roman = []
+    for j in n:
+        if j in rom:
+            lis.append(rom[j])
+    for i in lis:
+        add = add + i
+        
+    print(add)
+            
+romanToInt('XIX')
